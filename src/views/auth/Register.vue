@@ -29,6 +29,7 @@
                       label="Password"
                         name="password"
                         type="password"
+
                       >
                     </v-text-field>
                   </v-flex>

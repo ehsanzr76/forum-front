@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Register from "@/views/auth/Register";
 import Login from "@/views/auth/Login";
+import ShowThread from "@/views/thread/ShowThread";
 
 Vue.use(VueRouter)
 
@@ -23,6 +24,12 @@ const routes = [
     path: '/login',
     name: 'login',
     component: Login
+  },
+
+  {
+    path: '/thread/:slug',
+    name: 'ShowThread',
+    component: ShowThread
   },
   {
     path: '/about',
