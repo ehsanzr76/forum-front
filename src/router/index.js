@@ -4,6 +4,7 @@ import HomeView from '../views/HomeView.vue'
 import Register from "@/views/auth/Register";
 import Login from "@/views/auth/Login";
 import ShowThread from "@/views/thread/ShowThread";
+import CreateThread from "@/views/thread/CreateThread";
 
 Vue.use(VueRouter)
 
@@ -30,6 +31,12 @@ const routes = [
     path: '/thread/:slug',
     name: 'ShowThread',
     component: ShowThread
+  },
+
+  {
+    path: '/create/thread',
+    name: 'CreateThread',
+    component: CreateThread
   },
   {
     path: '/about',

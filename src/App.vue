@@ -59,6 +59,7 @@
           bottom
           left
           class="ml-3 mb-3"
+          to="/create/thread"
       >
         <v-icon>mdi-pencil</v-icon>
       </v-btn>
