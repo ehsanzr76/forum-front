@@ -5,6 +5,7 @@ import Register from "@/views/auth/Register";
 import Login from "@/views/auth/Login";
 import ShowThread from "@/views/thread/ShowThread";
 import CreateThread from "@/views/thread/CreateThread";
+import {checkAuth} from "@/requests/auth";
 
 Vue.use(VueRouter)
 
@@ -18,13 +19,13 @@ const routes = [
   {
     path: '/register',
     name: 'register',
-    component: Register
+    component: localStorage.getItem('isAuth')=== 'false' ? Register : HomeView
   },
 
   {
     path: '/login',
     name: 'login',
-    component: Login
+    component: localStorage.getItem('isAuth')=== 'false' ? Login : HomeView
   },
 
   {
